@@ -45,7 +45,7 @@ const Hero: React.FC = () => (
   <section id="home" className="hero">
     <div className="container">
       <div className="hero-content">
-        <img src={logoImg} alt="Sandrock logo" style={{ height: '120px', marginBottom: '30px' }} />
+        <img src={logoImg} alt="Sandrock logo" style={{ height: '140px', marginBottom: '50px' }} />
         <h1 className="hero-title">Engineering Excellence in Infrastructure<span>.</span></h1>
         <p className="hero-subtitle">Building robust foundations for the government and private sector with precision, safety, and integrity.</p>
         <div className="hero-btns">
@@ -235,8 +235,8 @@ const Footer: React.FC = () => (
           <p>&copy; 2024 Sandrock Infra Projects. Built for reliability.</p>
         </div>
         <div className="footer-socials">
-          <a href="#">LinkedIn</a>
-          <a href="#">X (Twitter)</a>
+          <a href="https://www.instagram.com/sandrockinfra?igsh=eWJmZDV0ZTkwajJn&utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://x.com/sandrockinfra" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
         </div>
       </div>
     </div>
