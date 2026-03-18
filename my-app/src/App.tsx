@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import projectImage from './assets/image.jpeg';
+import logoImg from './assets/sandrok.png';
 
 const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -18,7 +19,10 @@ const Navbar: React.FC = () => {
     <header className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container">
         <div className="logo">
-          <a href="#home">SANDROCK INFRA<span>.</span></a>
+          <a href="#home">
+            <img src={logoImg} alt="Sandrock logo" style={{ verticalAlign: 'middle', height: '60px', width: 'auto', marginRight: '12px' }} />
+            SANDROCK INFRA<span>.</span>
+          </a>
         </div>
         <nav className={`nav-links ${mobileMenuOpen ? 'active' : ''}`}>
           <a href="#home" onClick={() => setMobileMenuOpen(false)}>Home</a>
@@ -41,6 +45,7 @@ const Hero: React.FC = () => (
   <section id="home" className="hero">
     <div className="container">
       <div className="hero-content">
+        <img src={logoImg} alt="Sandrock logo" style={{ height: '120px', marginBottom: '30px' }} />
         <h1 className="hero-title">Engineering Excellence in Infrastructure<span>.</span></h1>
         <p className="hero-subtitle">Building robust foundations for the government and private sector with precision, safety, and integrity.</p>
         <div className="hero-btns">
@@ -57,7 +62,10 @@ const About: React.FC = () => (
     <div className="container">
       <div className="about-grid">
         <div className="about-text">
-          <span className="section-tag">WHO WE ARE</span>
+          <div style={{ display: 'flex', alignItems: 'center', marginBottom: '20px' }}>
+            <img src={logoImg} alt="Sandrock Icon" style={{ height: '40px', marginRight: '15px' }} />
+            <span className="section-tag" style={{ marginBottom: 0 }}>WHO WE ARE</span>
+          </div>
           <h2>A Legacy of Structural Reliability</h2>
           <p>Sandrock Infra Projects is a specialized engineering and construction firm focused on large-scale infrastructure development. We bridge the gap between complex engineering challenges and sustainable solutions.</p>
           <div className="vision-mission">
@@ -222,7 +230,10 @@ const Footer: React.FC = () => (
   <footer className="footer">
     <div className="container">
       <div className="footer-content">
-        <p>&copy; 2024 Sandrock Infra Projects. Built for reliability.</p>
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <img src={logoImg} alt="Sandrock Logo" style={{ height: '40px', width: 'auto', marginRight: '15px' }} />
+          <p>&copy; 2024 Sandrock Infra Projects. Built for reliability.</p>
+        </div>
         <div className="footer-socials">
           <a href="#">LinkedIn</a>
           <a href="#">X (Twitter)</a>
